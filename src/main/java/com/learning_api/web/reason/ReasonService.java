@@ -1,11 +1,12 @@
 package com.learning_api.web.reason;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ReasonService {
-    @Autowired
-    private ReasonRepository reasonRepository;
+    // @Autowired
+    // private ReasonRepository reasonRepository;
 
     public void create() {
     }

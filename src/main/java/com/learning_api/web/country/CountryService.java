@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CountryService {
-    @Autowired
-    private ReasonRepository countryRepository;
+    // @Autowired
+    // private CountryRepository countryRepository;
 
     public void create() {
     }
