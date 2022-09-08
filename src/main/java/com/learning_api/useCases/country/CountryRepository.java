@@ -1,13 +1,15 @@
 package com.learning_api.useCases.country;
 
+import com.learning_api.entities.country.CountryEntity;
+
 public interface CountryRepository {
-    public void readOne();
+    public CountryEntity readOne(final String id);
 
-    public void readMany();
+    public CountryEntity[] readMany();
 
-    public void save();
+    public void save(final CountryEntity country);
 
-    public void update();
+    public void update(final CountryEntity country);
 
-    public void delete();
+    public void delete(final String id);
 }

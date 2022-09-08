@@ -1,19 +1,20 @@
-package com.learning_api.useCases.country.delete;
+package com.learning_api.useCases.country.readOne;
 
+import com.learning_api.entities.country.CountryEntity;
 import com.learning_api.useCases.country.CountryRepository;
 
-public final class DeleteCountryService {
+public final class ReadOneCountryService {
     private final CountryRepository countryRepository;
     private final String id;
 
-    public DeleteCountryService(
+    public ReadOneCountryService(
             final CountryRepository countryRepository,
             final String id) {
         this.countryRepository = countryRepository;
         this.id = id;
     }
 
-    public void delete() {
-        this.countryRepository.delete(id);
+    public CountryEntity readOne() {
+        return this.countryRepository.readOne(id);
     }
 }
